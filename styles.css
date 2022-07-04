@@ -1,0 +1,71 @@
+:root{
+    --section-background: rgb(37, 113, 34);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.webContainer{
+    position: relative;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h1{
+    margin: 0;
+    background-color: rgb(151, 151, 38);
+    text-align: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--section-background);
+    padding-top: 5rem;
+}
+
+.menuButton{
+    position: fixed;
+    font-size: 2rem;
+    top: calc(100vh - 3rem);
+    left: auto;
+    right: .5rem;
+    z-index: 9;
+}
+
+.layerMenu{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    position: fixed;
+    background-color: rgba(100,100,350, .5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    display: none; 
+}
+
+.layerMenu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 4, 0.83);
+}
